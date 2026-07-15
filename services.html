@@ -8,121 +8,177 @@
 </head>
 <body id="top">
 
-    <header>
-        <p>
-            <strong>TechTide Solutions</strong>
-        </p>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="brand">TechTide <span>Solutions</span></a>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html" class="active">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu"><span></span></label>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
 
-        <section>
-            <h1>Our Services</h1>
-            <p>
-                We offer a full range of technology services designed to help your business thrive
-                in a digital world. Explore what we can do for you below.
-            </p>
+        <section class="page-hero">
+            <div class="wrap">
+                <p class="eyebrow">What we do</p>
+                <h1>Our services</h1>
+                <p class="lead">
+                    We offer a full range of technology services designed to help your business
+                    thrive in a digital world. Explore what we can do for you below.
+                </p>
+            </div>
         </section>
 
-        <section>
-            <article>
-                <img src="images/icons/icon-web-development.png" alt="Web Development icon" class="icon-img">
-                <h2>1. Web Development</h2>
-                <p>
-                    We design and build fast, responsive, and user-friendly websites tailored to your
-                    brand and business goals.
-                </p>
-                <ul>
-                    <li>Custom website design and development</li>
-                    <li>E-commerce store setup</li>
-                    <li>Website maintenance and updates</li>
-                    <li>Performance and speed optimization</li>
-                </ul>
-            </article>
+        <svg class="wave wave--to-light" viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M0,40 C240,100 480,0 720,40 C960,80 1200,0 1440,40 L1440,100 L0,100 Z"></path>
+        </svg>
 
-            <article>
-                <img src="images/icons/icon-cloud-consulting.png" alt="Cloud Consulting icon" class="icon-img">
-                <h2>2. Cloud Consulting</h2>
-                <p>
-                    Our cloud experts help you migrate, manage, and optimize your infrastructure for
-                    scalability and cost efficiency.
-                </p>
-                <ul>
-                    <li>Cloud migration strategy and execution</li>
-                    <li>Infrastructure setup and management</li>
-                    <li>Cost optimization reviews</li>
-                    <li>Security and compliance guidance</li>
-                </ul>
-            </article>
+        <section class="band band-light" style="padding-top:0;">
+            <div class="wrap">
 
-            <article>
-                <img src="images/icons/icon-digital-marketing.png" alt="Digital Marketing icon" class="icon-img">
-                <h2>3. Digital Marketing</h2>
-                <p>
-                    We help you reach the right audience through targeted, data-driven marketing
-                    campaigns across multiple channels.
-                </p>
-                <ul>
-                    <li>Search engine optimization (SEO)</li>
-                    <li>Social media marketing</li>
-                    <li>Pay-per-click (PPC) advertising</li>
-                    <li>Content strategy and creation</li>
-                </ul>
-            </article>
+                <article class="service-row">
+                    <div class="icon-badge">
+                        <img src="images/icons/icon-web-development.png" alt="Web Development icon">
+                    </div>
+                    <div>
+                        <h2>Web Development</h2>
+                        <p>
+                            We design and build fast, responsive, and user-friendly websites
+                            tailored to your brand and business goals.
+                        </p>
+                        <ul>
+                            <li>Custom website design and development</li>
+                            <li>E-commerce store setup</li>
+                            <li>Website maintenance and updates</li>
+                            <li>Performance and speed optimization</li>
+                        </ul>
+                    </div>
+                </article>
 
-            <article>
-                <img src="images/icons/icon-it-support.png" alt="IT Support icon" class="icon-img">
-                <h2>4. IT Support &amp; Maintenance</h2>
-                <p>
-                    Our dedicated support team keeps your systems running smoothly with fast,
-                    reliable technical assistance.
-                </p>
-                <ul>
-                    <li>24/7 helpdesk support</li>
-                    <li>Network setup and monitoring</li>
-                    <li>Data backup and recovery</li>
-                    <li>Hardware and software troubleshooting</li>
-                </ul>
-            </article>
+                <article class="service-row">
+                    <div class="icon-badge">
+                        <img src="images/icons/icon-cloud-consulting.png" alt="Cloud Consulting icon">
+                    </div>
+                    <div>
+                        <h2>Cloud Consulting</h2>
+                        <p>
+                            Our cloud experts help you migrate, manage, and optimize your
+                            infrastructure for scalability and cost efficiency.
+                        </p>
+                        <ul>
+                            <li>Cloud migration strategy and execution</li>
+                            <li>Infrastructure setup and management</li>
+                            <li>Cost optimization reviews</li>
+                            <li>Security and compliance guidance</li>
+                        </ul>
+                    </div>
+                </article>
 
-            <article>
-                <img src="images/icons/icon-mobile-app.png" alt="Mobile App Development icon" class="icon-img">
-                <h2>5. Mobile App Development</h2>
-                <p>
-                    We create intuitive mobile applications for iOS and Android that keep your
-                    customers engaged wherever they are.
-                </p>
-                <ul>
-                    <li>Native and cross-platform app development</li>
-                    <li>UI/UX design for mobile</li>
-                    <li>App testing and quality assurance</li>
-                    <li>App store deployment support</li>
-                </ul>
-            </article>
+                <article class="service-row">
+                    <div class="icon-badge">
+                        <img src="images/icons/icon-digital-marketing.png" alt="Digital Marketing icon">
+                    </div>
+                    <div>
+                        <h2>Digital Marketing</h2>
+                        <p>
+                            We help you reach the right audience through targeted, data-driven
+                            marketing campaigns across multiple channels.
+                        </p>
+                        <ul>
+                            <li>Search engine optimization (SEO)</li>
+                            <li>Social media marketing</li>
+                            <li>Pay-per-click (PPC) advertising</li>
+                            <li>Content strategy and creation</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="service-row">
+                    <div class="icon-badge">
+                        <img src="images/icons/icon-it-support.png" alt="IT Support icon">
+                    </div>
+                    <div>
+                        <h2>IT Support &amp; Maintenance</h2>
+                        <p>
+                            Our dedicated support team keeps your systems running smoothly with
+                            fast, reliable technical assistance.
+                        </p>
+                        <ul>
+                            <li>24/7 helpdesk support</li>
+                            <li>Network setup and monitoring</li>
+                            <li>Data backup and recovery</li>
+                            <li>Hardware and software troubleshooting</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="service-row">
+                    <div class="icon-badge">
+                        <img src="images/icons/icon-mobile-app.png" alt="Mobile App Development icon">
+                    </div>
+                    <div>
+                        <h2>Mobile App Development</h2>
+                        <p>
+                            We create intuitive mobile applications for iOS and Android that keep
+                            your customers engaged wherever they are.
+                        </p>
+                        <ul>
+                            <li>Native and cross-platform app development</li>
+                            <li>UI/UX design for mobile</li>
+                            <li>App testing and quality assurance</li>
+                            <li>App store deployment support</li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <svg class="wave wave--to-dark" viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M0,40 C240,100 480,0 720,40 C960,80 1200,0 1440,40 L1440,100 L0,100 Z"></path>
+        </svg>
+
+        <section class="band band-dark band-tight" style="padding-top:0;">
+            <div class="wrap">
+                <div class="band-header center" style="margin-bottom:28px;">
+                    <p class="eyebrow">Ready when you are</p>
+                    <h2>Let's talk about what TechTide can build for you.</h2>
+                </div>
+                <div class="actions" style="justify-content:center;">
+                    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 TechTide Solutions. All rights reserved.</p>
-        <p>Contact Email: <a href="mailto:info@techtidesolutions.com">info@techtidesolutions.com</a></p>
-        <nav>
-            <ul>
-                <li><a href="https://www.facebook.com/techtidesolutions">Facebook</a></li>
-                <li><a href="https://www.twitter.com/techtidesolutions">Twitter</a></li>
-                <li><a href="https://www.linkedin.com/company/techtidesolutions">LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/techtidesolutions">Instagram</a></li>
-            </ul>
-        </nav>
+        <div class="footer-inner">
+            <div>
+                <a href="index.html" class="brand">TechTide <span>Solutions</span></a>
+                <p>&copy; 2026 TechTide Solutions. All rights reserved.</p>
+                <p>Contact Email: <a href="mailto:info@techtidesolutions.com">info@techtidesolutions.com</a></p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://www.facebook.com/techtidesolutions">Facebook</a></li>
+                    <li><a href="https://www.twitter.com/techtidesolutions">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/company/techtidesolutions">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/techtidesolutions">Instagram</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="footer-bottom">Built with care in Lahore, Pakistan.</p>
     </footer>
 
     <a href="#top" class="back-to-top" aria-label="Back to top of page">&uarr;</a>

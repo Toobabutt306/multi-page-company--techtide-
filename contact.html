@@ -8,132 +8,159 @@
 </head>
 <body id="top">
 
-    <header>
-        <p>
-            <strong>TechTide Solutions</strong>
-        </p>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="brand">TechTide <span>Solutions</span></a>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu"><span></span></label>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
 
-        <section>
-            <h1>Contact Us</h1>
-            <p>We would love to hear from you. Reach out using the information below or send us a message directly.</p>
+        <section class="page-hero">
+            <div class="wrap">
+                <p class="eyebrow">Get in touch</p>
+                <h1>Contact us</h1>
+                <p class="lead">
+                    We would love to hear from you. Reach out using the information below or
+                    send us a message directly.
+                </p>
+            </div>
         </section>
 
-        <section>
-            <h2>Contact Information</h2>
-            <img src="images/office-building.jpg" alt="Illustration of the TechTide Solutions office skyline" class="banner-img">
+        <svg class="wave wave--to-light" viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M0,40 C240,100 480,0 720,40 C960,80 1200,0 1440,40 L1440,100 L0,100 Z"></path>
+        </svg>
 
-            <table border="1" cellpadding="15" cellspacing="15" width="100%">
-                <tr>
-                    <td width="33%" valign="top">
-                        <article>
-                            <h3>Office Address</h3>
-                            <address>
-                                TechTide Solutions<br>
-                                45 Innovation Avenue<br>
-                                Gulberg III, Lahore<br>
-                                Punjab, Pakistan
-                            </address>
-                        </article>
-                    </td>
-                    <td width="33%" valign="top">
-                        <article>
-                            <h3>Email</h3>
-                            <p><a href="mailto:info@techtidesolutions.com">info@techtidesolutions.com</a></p>
-                            <p>We reply within one business day.</p>
-                        </article>
-                    </td>
-                    <td width="33%" valign="top">
-                        <article>
-                            <h3>Phone Number</h3>
-                            <p><a href="tel:+924211223344">+92 42 1122 3344</a></p>
-                            <p>Available Monday to Friday, 9 AM &ndash; 6 PM.</p>
-                        </article>
-                    </td>
-                </tr>
-            </table>
+        <section class="band band-light band-tight" style="padding-top:0;">
+            <div class="wrap">
+                <img src="images/office-building.jpg" alt="Illustration of the TechTide Solutions office skyline" class="banner-img">
+
+                <div class="grid grid-3">
+                    <article class="card contact-card">
+                        <h3>Office Address</h3>
+                        <address>
+                            TechTide Solutions<br>
+                            45 Innovation Avenue<br>
+                            Gulberg III, Lahore<br>
+                            Punjab, Pakistan
+                        </address>
+                    </article>
+                    <article class="card contact-card">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@techtidesolutions.com">info@techtidesolutions.com</a></p>
+                        <p>We reply within one business day.</p>
+                    </article>
+                    <article class="card contact-card">
+                        <h3>Phone Number</h3>
+                        <p><a href="tel:+924211223344">+92 42 1122 3344</a></p>
+                        <p>Available Monday to Friday, 9 AM &ndash; 6 PM.</p>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Our Location</h2>
-            <p>Find us on the map below &mdash; TechTide Solutions, Gulberg III, Lahore, Pakistan.</p>
-            <iframe
-                title="TechTide Solutions Office Location Map"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=74.3400%2C31.5000%2C74.3700%2C31.5300&amp;layer=mapnik&amp;marker=31.5150%2C74.3550"
-                width="100%"
-                height="400"
-                frameborder="0"
-                scrolling="no">
-            </iframe>
-            <p>
-                <a href="https://www.openstreetmap.org/?mlat=31.5150&amp;mlon=74.3550#map=15/31.5150/74.3550">
-                    View Larger Map
+        <svg class="wave wave--to-dark" viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M0,40 C240,100 480,0 720,40 C960,80 1200,0 1440,40 L1440,100 L0,100 Z"></path>
+        </svg>
+
+        <section class="band band-dark band-tight" style="padding-top:0;">
+            <div class="wrap">
+                <div class="band-header">
+                    <p class="eyebrow">Find us</p>
+                    <h2>Our location</h2>
+                    <p>TechTide Solutions, Gulberg III, Lahore, Pakistan.</p>
+                </div>
+                <iframe
+                    class="map-frame"
+                    title="TechTide Solutions Office Location Map"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=74.3400%2C31.5000%2C74.3700%2C31.5300&amp;layer=mapnik&amp;marker=31.5150%2C74.3550"
+                    scrolling="no">
+                </iframe>
+                <a href="https://www.openstreetmap.org/?mlat=31.5150&amp;mlon=74.3550#map=15/31.5150/74.3550" class="text-link map-link">
+                    View larger map
                 </a>
-            </p>
+            </div>
         </section>
 
-        <section>
-            <h2>Send Us a Message</h2>
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Contact Form</legend>
+        <svg class="wave wave--to-light" viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M0,40 C240,100 480,0 720,40 C960,80 1200,0 1440,40 L1440,100 L0,100 Z"></path>
+        </svg>
 
-                    <p>
-                        <label for="name">Full Name</label><br>
-                        <input type="text" id="name" name="name" required>
-                    </p>
+        <section class="band band-light" style="padding-top:0;">
+            <div class="wrap">
+                <div class="band-header center">
+                    <p class="eyebrow">Say hello</p>
+                    <h2>Send us a message</h2>
+                </div>
 
-                    <p>
-                        <label for="email">Email Address</label><br>
-                        <input type="email" id="email" name="email" required>
-                    </p>
+                <form action="#" method="post" class="form-card">
+                    <fieldset>
+                        <legend>Contact Form</legend>
 
-                    <p>
-                        <label for="phone">Phone Number</label><br>
-                        <input type="tel" id="phone" name="phone">
-                    </p>
+                        <div class="field-row">
+                            <div class="field">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="field">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
 
-                    <p>
-                        <label for="subject">Subject</label><br>
-                        <input type="text" id="subject" name="subject">
-                    </p>
+                        <div class="field-row">
+                            <div class="field">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="field">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                        </div>
 
-                    <p>
-                        <label for="message">Message</label><br>
-                        <textarea id="message" name="message" rows="6" cols="40" required></textarea>
-                    </p>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
 
-                    <p>
                         <button type="submit">Send Message</button>
-                    </p>
-                </fieldset>
-            </form>
+                    </fieldset>
+                </form>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 TechTide Solutions. All rights reserved.</p>
-        <p>Contact Email: <a href="mailto:info@techtidesolutions.com">info@techtidesolutions.com</a></p>
-        <nav>
-            <ul>
-                <li><a href="https://www.facebook.com/techtidesolutions">Facebook</a></li>
-                <li><a href="https://www.twitter.com/techtidesolutions">Twitter</a></li>
-                <li><a href="https://www.linkedin.com/company/techtidesolutions">LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/techtidesolutions">Instagram</a></li>
-            </ul>
-        </nav>
+        <div class="footer-inner">
+            <div>
+                <a href="index.html" class="brand">TechTide <span>Solutions</span></a>
+                <p>&copy; 2026 TechTide Solutions. All rights reserved.</p>
+                <p>Contact Email: <a href="mailto:info@techtidesolutions.com">info@techtidesolutions.com</a></p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://www.facebook.com/techtidesolutions">Facebook</a></li>
+                    <li><a href="https://www.twitter.com/techtidesolutions">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/company/techtidesolutions">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/techtidesolutions">Instagram</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="footer-bottom">Built with care in Lahore, Pakistan.</p>
     </footer>
 
     <a href="#top" class="back-to-top" aria-label="Back to top of page">&uarr;</a>
