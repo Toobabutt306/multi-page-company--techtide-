@@ -151,8 +151,7 @@ external/copyrighted media), so there are no licensing concerns.
    and video are all local files and work fully offline.
 
 ## GitHub Repository
-`https://github.com/<your-username>/techtide-website` — replace with your
-actual repository link before submission.
+(https://github.com/Toobabutt306/multi-page-company--techtide-.git)
 
 ## Author
 TechTide Summer Internship 2026 — Intern Submission
