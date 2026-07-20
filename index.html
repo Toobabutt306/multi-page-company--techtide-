@@ -8,6 +8,8 @@
 </head>
 <body id="top">
 
+    <div id="scroll-progress"></div>
+
     <header class="site-header">
         <div class="header-inner">
             <a href="index.html" class="brand">TechTide <span>Solutions</span></a>
@@ -23,23 +25,39 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <div class="nav-actions">
+                <button type="button" id="theme-toggle" aria-label="Switch to light mode">&#127769;</button>
+            </div>
         </div>
     </header>
+
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span class="hl">WEB DEVELOPMENT</span><span>CLOUD CONSULTING</span><span class="hl">DIGITAL MARKETING</span><span>IT SUPPORT</span><span class="hl">MOBILE APPS</span>
+            <span class="hl">WEB DEVELOPMENT</span><span>CLOUD CONSULTING</span><span class="hl">DIGITAL MARKETING</span><span>IT SUPPORT</span><span class="hl">MOBILE APPS</span>
+        </div>
+    </div>
 
     <main>
 
         <section class="hero">
             <div class="hero-inner">
-                <p class="eyebrow">Web &middot; Cloud &middot; Marketing &middot; Support &middot; Mobile</p>
-                <h1>Riding the wave of technology, <em>for your business.</em></h1>
-                <p class="lead">
-                    TechTide Solutions helps businesses navigate the digital landscape with
-                    practical strategy and dependable engineering &mdash; building a smarter,
-                    more connected future one project at a time.
-                </p>
-                <div class="actions">
-                    <a href="services.html" class="btn btn-primary">Explore Our Services</a>
-                    <a href="about.html" class="btn btn-ghost">Meet the Team</a>
+                <div class="hero-grid">
+                    <div class="reveal reveal-left">
+                        <p class="eyebrow">Web &middot; Cloud &middot; Marketing &middot; Support &middot; Mobile</p>
+                        <h1>Riding the wave of technology, <em>for your business.</em></h1>
+                        <p class="lead">
+                            TechTide Solutions helps businesses navigate the digital landscape with
+                            practical strategy and dependable engineering &mdash; building a smarter,
+                            more connected future one project at a time.
+                        </p>
+                        <div class="actions">
+                            <a href="services.html" class="btn btn-primary">Explore Our Services</a>
+                            <a href="about.html" class="btn btn-ghost">Meet the Team</a>
+                        </div>
+                    </div>
+                    <img src="images/hero/hero-web.svg" alt="Illustration of a web dashboard and analytics representing TechTide's development work" class="hero-art reveal reveal-right">
                 </div>
             </div>
             <svg class="wave wave--to-light" viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -50,7 +68,7 @@
         <section class="band band-light">
             <div class="wrap">
                 <div class="split">
-                    <div>
+                    <div class="reveal reveal-left">
                         <p class="eyebrow">Who we are</p>
                         <h2>A technology partner that stays close to the work.</h2>
                         <p>
@@ -66,7 +84,7 @@
                         </p>
                         <a href="about.html" class="text-link">More about our story</a>
                     </div>
-                    <div class="stat-list">
+                    <div class="stat-list reveal reveal-right">
                         <div class="stat">
                             <h4>Full-service delivery</h4>
                             <p>Web, cloud, marketing, support, and mobile under one roof.</p>
@@ -86,15 +104,15 @@
 
         <section class="band band-light band-tight" style="padding-top:0;">
             <div class="wrap">
-                <div class="band-header">
+                <div class="band-header reveal">
                     <p class="eyebrow">Featured services</p>
                     <h2>A quick look at what we're best known for.</h2>
                 </div>
 
-                <div class="grid grid-4">
+                <div class="grid grid-4 reveal reveal-group">
                     <article class="card service-card">
                         <div class="icon-badge">
-                            <img src="images/icons/icon-web-development.png" alt="Web Development icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="svc-icon" role="img" aria-label="Web Development icon"><polyline points="8 6 3 12 8 18"></polyline><polyline points="16 6 21 12 16 18"></polyline><line x1="14" y1="4" x2="10" y2="20"></line></svg>
                         </div>
                         <h3>Web Development</h3>
                         <p>Custom, responsive websites built to help your business stand out online.</p>
@@ -102,7 +120,7 @@
                     </article>
                     <article class="card service-card">
                         <div class="icon-badge">
-                            <img src="images/icons/icon-cloud-consulting.png" alt="Cloud Consulting icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="svc-icon" role="img" aria-label="Cloud Consulting icon"><path d="M17.5 19a4.5 4.5 0 0 0 0-9 6 6 0 0 0-11.4 1.6A4 4 0 0 0 6.5 19h11z"></path></svg>
                         </div>
                         <h3>Cloud Consulting</h3>
                         <p>Expert guidance on migrating and managing your infrastructure in the cloud.</p>
@@ -110,7 +128,7 @@
                     </article>
                     <article class="card service-card">
                         <div class="icon-badge">
-                            <img src="images/icons/icon-digital-marketing.png" alt="Digital Marketing icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="svc-icon" role="img" aria-label="Digital Marketing icon"><path d="M3 11v3a1 1 0 0 0 1 1h2l4 4V6L6 10H4a1 1 0 0 0-1 1z"></path><path d="M14 8a4 4 0 0 1 0 8"></path><path d="M17 5a8 8 0 0 1 0 14"></path></svg>
                         </div>
                         <h3>Digital Marketing</h3>
                         <p>Data-driven marketing strategies that connect you with the right audience.</p>
@@ -118,7 +136,7 @@
                     </article>
                     <article class="card service-card">
                         <div class="icon-badge">
-                            <img src="images/icons/icon-it-support.png" alt="IT Support icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="svc-icon" role="img" aria-label="IT Support icon"><path d="M4 13v-1a8 8 0 0 1 16 0v1"></path><rect x="2.5" y="13" width="4" height="6" rx="1.5"></rect><rect x="17.5" y="13" width="4" height="6" rx="1.5"></rect><path d="M20 19a4 4 0 0 1-4 3h-2"></path></svg>
                         </div>
                         <h3>IT Support</h3>
                         <p>Reliable, round-the-clock technical support for your growing business.</p>
@@ -136,26 +154,26 @@
 
         <section class="band band-dark band-tight" style="padding-top:0;">
             <div class="wrap">
-                <div class="band-header">
+                <div class="band-header reveal">
                     <p class="eyebrow">Featured content</p>
                     <h2>Insights, stories, and resources from the team.</h2>
                 </div>
 
-                <div class="grid grid-3">
+                <div class="grid grid-3 reveal reveal-group">
                     <article class="card content-card">
-                        <img src="images/gallery/featured-case-study.jpg" alt="Case study thumbnail" class="card-img">
+                        <img src="images/gallery/featured-case-study.svg" alt="Case study thumbnail" class="card-img">
                         <h3>Case Study: Retail Cloud Migration</h3>
                         <p>How we helped a growing retailer cut infrastructure costs by 35% with a phased cloud migration.</p>
                         <a href="services.html" class="text-link">Read more</a>
                     </article>
                     <article class="card content-card">
-                        <img src="images/gallery/featured-blog.jpg" alt="Blog article thumbnail" class="card-img">
+                        <img src="images/gallery/featured-blog.svg" alt="Blog article thumbnail" class="card-img">
                         <h3>Blog: 5 Web Trends for 2026</h3>
                         <p>Our design team breaks down the trends shaping fast, accessible, business-ready websites this year.</p>
                         <a href="services.html" class="text-link">Read more</a>
                     </article>
                     <article class="card content-card">
-                        <img src="images/gallery/featured-whitepaper.jpg" alt="Whitepaper thumbnail" class="card-img">
+                        <img src="images/gallery/featured-whitepaper.svg" alt="Whitepaper thumbnail" class="card-img">
                         <h3>Whitepaper: Securing Your Stack</h3>
                         <p>A practical guide to IT security fundamentals for growing businesses, written by our support team.</p>
                         <a href="services.html" class="text-link">Read more</a>
@@ -166,17 +184,57 @@
 
         <section class="band band-light">
             <div class="wrap">
-                <div class="band-header center">
+                <div class="band-header center reveal">
                     <p class="eyebrow">See TechTide in action</p>
                     <h2>A quick look at who we are and what drives us.</h2>
                 </div>
-                <div class="video-wrapper">
-                    <video class="intro-video" controls poster="images/company-intro-poster.jpg">
+                <div class="video-wrapper reveal">
+                    <video class="intro-video" controls poster="images/company-intro-poster.svg">
                         <source src="videos/company-intro.mp4" type="video/mp4">
                         Your browser does not support the video tag. You can
                         <a href="videos/company-intro.mp4">download the video</a> instead.
                     </video>
                     <p class="video-caption">TechTide Solutions &mdash; Company Intro (0:08)</p>
+                </div>
+            </div>
+        </section>
+
+        <svg class="wave wave--to-dark" viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M0,40 C240,100 480,0 720,40 C960,80 1200,0 1440,40 L1440,100 L0,100 Z"></path>
+        </svg>
+
+        <section class="band band-dark">
+            <div class="wrap">
+                <div class="band-header center reveal">
+                    <p class="eyebrow">What clients say</p>
+                    <h2>Trusted by teams who need things done right.</h2>
+                </div>
+
+                <div class="grid grid-3 reveal reveal-group">
+                    <article class="card testimonial-card">
+                        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <p>TechTide rebuilt our online store and our checkout conversion went up within the first month. Communication was excellent throughout.</p>
+                        <div class="person">
+                            <img src="images/team-sara.svg" alt="">
+                            <div><strong>Nadia Farooq</strong><span>Founder, Meridian Retail</span></div>
+                        </div>
+                    </article>
+                    <article class="card testimonial-card">
+                        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <p>Our cloud migration was handled with zero downtime. The team explained every step in plain language, which we really appreciated.</p>
+                        <div class="person">
+                            <img src="images/team-bilal.svg" alt="">
+                            <div><strong>Omar Siddiqui</strong><span>Operations Lead, Vantage Logistics</span></div>
+                        </div>
+                    </article>
+                    <article class="card testimonial-card">
+                        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <p>Fast, responsive IT support whenever we need it. It genuinely feels like they're part of our own team rather than an outside vendor.</p>
+                        <div class="person">
+                            <img src="images/team-ayesha.svg" alt="">
+                            <div><strong>Layla Chaudhry</strong><span>HR Director, Brightpath Clinics</span></div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -203,6 +261,8 @@
     </footer>
 
     <a href="#top" class="back-to-top" aria-label="Back to top of page">&uarr;</a>
+
+    <script src="js/site.js"></script>
 
 </body>
 </html>

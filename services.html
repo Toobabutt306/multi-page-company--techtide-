@@ -8,6 +8,8 @@
 </head>
 <body id="top">
 
+    <div id="scroll-progress"></div>
+
     <header class="site-header">
         <div class="header-inner">
             <a href="index.html" class="brand">TechTide <span>Solutions</span></a>
@@ -23,19 +25,35 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <div class="nav-actions">
+                <button type="button" id="theme-toggle" aria-label="Switch to light mode">&#127769;</button>
+            </div>
         </div>
     </header>
+
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span class="hl">WEB DEVELOPMENT</span><span>CLOUD CONSULTING</span><span class="hl">DIGITAL MARKETING</span><span>IT SUPPORT</span><span class="hl">MOBILE APPS</span>
+            <span class="hl">WEB DEVELOPMENT</span><span>CLOUD CONSULTING</span><span class="hl">DIGITAL MARKETING</span><span>IT SUPPORT</span><span class="hl">MOBILE APPS</span>
+        </div>
+    </div>
 
     <main>
 
         <section class="page-hero">
             <div class="wrap">
-                <p class="eyebrow">What we do</p>
-                <h1>Our services</h1>
-                <p class="lead">
-                    We offer a full range of technology services designed to help your business
-                    thrive in a digital world. Explore what we can do for you below.
-                </p>
+                <div class="hero-grid">
+                    <div class="reveal reveal-left">
+                        <p class="eyebrow">What we do</p>
+                        <h1>Our services</h1>
+                        <p class="lead">
+                            We offer a full range of technology services designed to help your business
+                            thrive in a digital world. Explore what we can do for you below.
+                        </p>
+                    </div>
+                    <img src="images/hero/hero-services.svg" alt="Illustration of interlocking gears representing TechTide's suite of technology services" class="page-hero-art reveal reveal-right">
+                </div>
             </div>
         </section>
 
@@ -46,9 +64,9 @@
         <section class="band band-light" style="padding-top:0;">
             <div class="wrap">
 
-                <article class="service-row">
+                <article class="service-row reveal">
                     <div class="icon-badge">
-                        <img src="images/icons/icon-web-development.png" alt="Web Development icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="svc-icon" role="img" aria-label="Web Development icon"><polyline points="8 6 3 12 8 18"></polyline><polyline points="16 6 21 12 16 18"></polyline><line x1="14" y1="4" x2="10" y2="20"></line></svg>
                     </div>
                     <div>
                         <h2>Web Development</h2>
@@ -65,9 +83,9 @@
                     </div>
                 </article>
 
-                <article class="service-row">
+                <article class="service-row reveal">
                     <div class="icon-badge">
-                        <img src="images/icons/icon-cloud-consulting.png" alt="Cloud Consulting icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="svc-icon" role="img" aria-label="Cloud Consulting icon"><path d="M17.5 19a4.5 4.5 0 0 0 0-9 6 6 0 0 0-11.4 1.6A4 4 0 0 0 6.5 19h11z"></path></svg>
                     </div>
                     <div>
                         <h2>Cloud Consulting</h2>
@@ -84,9 +102,9 @@
                     </div>
                 </article>
 
-                <article class="service-row">
+                <article class="service-row reveal">
                     <div class="icon-badge">
-                        <img src="images/icons/icon-digital-marketing.png" alt="Digital Marketing icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="svc-icon" role="img" aria-label="Digital Marketing icon"><path d="M3 11v3a1 1 0 0 0 1 1h2l4 4V6L6 10H4a1 1 0 0 0-1 1z"></path><path d="M14 8a4 4 0 0 1 0 8"></path><path d="M17 5a8 8 0 0 1 0 14"></path></svg>
                     </div>
                     <div>
                         <h2>Digital Marketing</h2>
@@ -103,9 +121,9 @@
                     </div>
                 </article>
 
-                <article class="service-row">
+                <article class="service-row reveal">
                     <div class="icon-badge">
-                        <img src="images/icons/icon-it-support.png" alt="IT Support icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="svc-icon" role="img" aria-label="IT Support icon"><path d="M4 13v-1a8 8 0 0 1 16 0v1"></path><rect x="2.5" y="13" width="4" height="6" rx="1.5"></rect><rect x="17.5" y="13" width="4" height="6" rx="1.5"></rect><path d="M20 19a4 4 0 0 1-4 3h-2"></path></svg>
                     </div>
                     <div>
                         <h2>IT Support &amp; Maintenance</h2>
@@ -122,9 +140,9 @@
                     </div>
                 </article>
 
-                <article class="service-row">
+                <article class="service-row reveal">
                     <div class="icon-badge">
-                        <img src="images/icons/icon-mobile-app.png" alt="Mobile App Development icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="svc-icon" role="img" aria-label="Mobile App Development icon"><rect x="7" y="2.5" width="10" height="19" rx="2"></rect><line x1="7" y1="18" x2="17" y2="18"></line></svg>
                     </div>
                     <div>
                         <h2>Mobile App Development</h2>
@@ -141,6 +159,85 @@
                     </div>
                 </article>
 
+            </div>
+        </section>
+
+        <svg class="wave wave--to-dark" viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M0,40 C240,100 480,0 720,40 C960,80 1200,0 1440,40 L1440,100 L0,100 Z"></path>
+        </svg>
+
+        <section class="band band-dark band-tight" style="padding-top:0;">
+            <div class="wrap">
+                <div class="band-header center reveal">
+                    <p class="eyebrow">Pricing</p>
+                    <h2>Straightforward packages for every stage.</h2>
+                </div>
+                <div class="pricing-grid reveal reveal-group">
+                    <div class="price-card">
+                        <p class="eyebrow" style="margin-bottom:0;">Starter</p>
+                        <p class="price-tag">$1,200 <span>/ project</span></p>
+                        <ul>
+                            <li>5-page responsive website</li>
+                            <li>Basic on-page SEO</li>
+                            <li>2 rounds of revisions</li>
+                            <li>30 days of support</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-ghost">Get Started</a>
+                    </div>
+                    <div class="price-card featured">
+                        <p class="eyebrow" style="margin-bottom:0;">Growth</p>
+                        <p class="price-tag">$3,500 <span>/ project</span></p>
+                        <ul>
+                            <li>Full website + cloud setup</li>
+                            <li>Marketing launch campaign</li>
+                            <li>Unlimited revisions</li>
+                            <li>90 days of priority support</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                    <div class="price-card">
+                        <p class="eyebrow" style="margin-bottom:0;">Enterprise</p>
+                        <p class="price-tag">Custom</p>
+                        <ul>
+                            <li>Custom web &amp; mobile builds</li>
+                            <li>Dedicated account manager</li>
+                            <li>SLA-backed 24/7 IT support</li>
+                            <li>Ongoing strategy reviews</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-ghost">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <svg class="wave wave--to-light" viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M0,40 C240,100 480,0 720,40 C960,80 1200,0 1440,40 L1440,100 L0,100 Z"></path>
+        </svg>
+
+        <section class="band band-light band-tight" style="padding-top:0;">
+            <div class="wrap">
+                <div class="band-header center">
+                    <p class="eyebrow">Common questions</p>
+                    <h2>Frequently asked questions</h2>
+                </div>
+                <div class="faq-list reveal reveal-group">
+                    <details class="faq-item">
+                        <summary>How long does a typical website project take?</summary>
+                        <p>Most 5&ndash;8 page websites are completed in 3&ndash;5 weeks, depending on content readiness and revision rounds.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Do you offer ongoing support after launch?</summary>
+                        <p>Yes &mdash; every package includes a support window, and we offer monthly retainer plans for ongoing maintenance.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can you work with our existing cloud provider?</summary>
+                        <p>Absolutely. We work across AWS, Azure, and Google Cloud, and can also advise on migrating between providers.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What industries do you typically work with?</summary>
+                        <p>We've delivered projects across retail, finance, healthcare, logistics, and education, among others.</p>
+                    </details>
+                </div>
             </div>
         </section>
 
@@ -182,6 +279,8 @@
     </footer>
 
     <a href="#top" class="back-to-top" aria-label="Back to top of page">&uarr;</a>
+
+    <script src="js/site.js"></script>
 
 </body>
 </html>

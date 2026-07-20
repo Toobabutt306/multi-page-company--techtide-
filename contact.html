@@ -8,6 +8,8 @@
 </head>
 <body id="top">
 
+    <div id="scroll-progress"></div>
+
     <header class="site-header">
         <div class="header-inner">
             <a href="index.html" class="brand">TechTide <span>Solutions</span></a>
@@ -23,19 +25,35 @@
                     <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
+
+            <div class="nav-actions">
+                <button type="button" id="theme-toggle" aria-label="Switch to light mode">&#127769;</button>
+            </div>
         </div>
     </header>
+
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span class="hl">WEB DEVELOPMENT</span><span>CLOUD CONSULTING</span><span class="hl">DIGITAL MARKETING</span><span>IT SUPPORT</span><span class="hl">MOBILE APPS</span>
+            <span class="hl">WEB DEVELOPMENT</span><span>CLOUD CONSULTING</span><span class="hl">DIGITAL MARKETING</span><span>IT SUPPORT</span><span class="hl">MOBILE APPS</span>
+        </div>
+    </div>
 
     <main>
 
         <section class="page-hero">
             <div class="wrap">
-                <p class="eyebrow">Get in touch</p>
-                <h1>Contact us</h1>
-                <p class="lead">
-                    We would love to hear from you. Reach out using the information below or
-                    send us a message directly.
-                </p>
+                <div class="hero-grid">
+                    <div class="reveal reveal-left">
+                        <p class="eyebrow">Get in touch</p>
+                        <h1>Contact us</h1>
+                        <p class="lead">
+                            We would love to hear from you. Reach out using the information below or
+                            send us a message directly.
+                        </p>
+                    </div>
+                    <img src="images/hero/hero-contact.svg" alt="Illustration of a message and location pin representing how to reach TechTide" class="page-hero-art reveal reveal-right">
+                </div>
             </div>
         </section>
 
@@ -45,9 +63,9 @@
 
         <section class="band band-light band-tight" style="padding-top:0;">
             <div class="wrap">
-                <img src="images/office-building.jpg" alt="Illustration of the TechTide Solutions office skyline" class="banner-img">
+                <img src="images/office-building.svg" alt="Illustration of the TechTide Solutions office skyline" class="banner-img reveal">
 
-                <div class="grid grid-3">
+                <div class="grid grid-3 reveal reveal-group">
                     <article class="card contact-card">
                         <h3>Office Address</h3>
                         <address>
@@ -77,12 +95,12 @@
 
         <section class="band band-dark band-tight" style="padding-top:0;">
             <div class="wrap">
-                <div class="band-header">
+                <div class="band-header reveal">
                     <p class="eyebrow">Find us</p>
                     <h2>Our location</h2>
                     <p>TechTide Solutions, Gulberg III, Lahore, Pakistan.</p>
                 </div>
-                <iframe
+                <iframe class="reveal"
                     class="map-frame"
                     title="TechTide Solutions Office Location Map"
                     src="https://www.openstreetmap.org/export/embed.html?bbox=74.3400%2C31.5000%2C74.3700%2C31.5300&amp;layer=mapnik&amp;marker=31.5150%2C74.3550"
@@ -100,12 +118,12 @@
 
         <section class="band band-light" style="padding-top:0;">
             <div class="wrap">
-                <div class="band-header center">
+                <div class="band-header center reveal">
                     <p class="eyebrow">Say hello</p>
                     <h2>Send us a message</h2>
                 </div>
 
-                <form action="#" method="post" class="form-card">
+                <form action="#" method="post" class="form-card reveal">
                     <fieldset>
                         <legend>Contact Form</legend>
 
@@ -164,6 +182,8 @@
     </footer>
 
     <a href="#top" class="back-to-top" aria-label="Back to top of page">&uarr;</a>
+
+    <script src="js/site.js"></script>
 
 </body>
 </html>

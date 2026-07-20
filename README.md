@@ -1,25 +1,101 @@
-# TechTide Solutions – Company Website
+# TechTide Solutions — Company Website
 
 ## Project Title
-TechTide Solutions — Multi-Page Company Website (HTML + CSS)
+TechTide Solutions — Multi-Page Responsive Company Website (HTML + CSS + JS)
 
 **TechTide Summer Internship 2026**
-Day 2 Assignment — CSS Box Model & Layout (building on Day 1's CSS Fundamentals)
+Final CSS Assignment — Complete Responsive Company Website
 
-## Objective
-Enhance the existing multi-page website by applying the CSS Box Model
-(margin, padding, border, box-sizing) and improving overall layout —
-containers, card designs, button states, navigation, and footer — while
-keeping everything in a single external stylesheet.
+## Project Description
+A four-page, fully responsive company website for a fictional technology
+consultancy, TechTide Solutions. The project takes an existing HTML-only
+site and applies a complete modern CSS treatment: a professional
+charcoal-and-muted-gold color system, custom typography, Flexbox and Grid
+layouts, animated components, dark/light mode, and full responsiveness
+from desktop down to mobile.
 
 ## Pages
 
 | Page     | File            | Description                                                                 |
 |----------|-----------------|-------------------------------------------------------------------------------|
-| Home     | `index.html`    | Hero (with background image), Featured Services cards, **Featured Content cards**, **video** |
-| About    | `about.html`    | Overview, mission, vision, Team Member cards with photos, **Workspace & Culture gallery** |
-| Services | `services.html` | Five services, each with an icon, styled as individual cards                  |
-| Contact  | `contact.html`  | Office banner image, Contact Information cards, embedded map, contact form    |
+| Home     | `index.html`    | Hero, infinite-scroll capability marquee, Who We Are, Featured Services cards, Featured Content cards, intro video, Testimonial cards |
+| About    | `about.html`    | Company overview, Mission/Vision, Team Member cards, Workspace & Culture gallery |
+| Services | `services.html` | Five services as alternating rows, Pricing section, FAQ accordion            |
+| Contact  | `contact.html`  | Office banner, Contact Information cards, embedded map, contact form         |
+
+## Features Implemented
+
+**Typography & Color Theme**
+- Google Fonts: Fraunces (display/serif) + Manrope (body/sans)
+- Full type hierarchy (h1–h4, lead text, eyebrow labels) with deliberate
+  line-height and letter-spacing
+- Professional charcoal & muted-gold palette, defined entirely with CSS
+  custom properties (`:root`) and reused consistently across every page
+- Dark theme by default, with a light-theme override driven by the same
+  variable set
+
+**Navigation**
+- Responsive Flexbox navigation bar
+- Hover effects with an animated underline
+- Active-page indicator (gold pill background)
+- Sticky navigation on scroll
+- Mobile menu via a CSS-only checkbox toggle
+
+**Hero Section**
+- Gradient background with a subtle drifting texture image
+- Heading, supporting description, and call-to-action buttons
+- Consistent spacing system reused on every page's hero/page-hero
+
+**Cards**
+- Service cards, Team Member cards, Featured Content cards, Contact
+  cards, Pricing cards, and **Testimonial cards** — each with border
+  radius, box shadow, hover lift, and smooth transitions
+
+**Buttons**
+- Primary (gradient) and ghost button styles
+- Hover color/shadow transitions, rounded pill corners, consistent use
+  across every page
+
+**Layout**
+- Flexbox: header, footer, marquee, button groups, form rows
+- CSS Grid: card grids, split layouts, pricing grid, pillars
+- Consistent `.wrap` container, spacing scale, and section "bands"
+
+**Responsive Design**
+- Tested and adjusted at Desktop (1200px+), Laptop (992px+),
+  Tablet (768px+), and Mobile (≤576px) breakpoints via media queries
+
+**Animations & Effects** *(6 implemented)*
+- Fade-in / slide-in on scroll (IntersectionObserver + `.reveal` classes)
+- Card lift + shadow-glow hover effect
+- Image zoom on hover (content & culture cards)
+- Button hover/transition effects
+- Navigation underline animation
+- Icon-badge rotate/scale animation on hover
+
+**Footer**
+- Company information, quick links (social), contact email, copyright —
+  arranged with Flexbox
+
+## Bonus Challenges Completed
+- **Dark Mode toggle** using CSS variables (`[data-theme="light"]`
+  override), persisted with `localStorage`
+- **Scroll-to-top functionality** — HTML + CSS + JavaScript, fades in
+  after scrolling past the hero and smooth-scrolls back to `#top`
+- **FAQ section** — CSS-only accordion built with native
+  `<details>`/`<summary>`
+- **Modern pricing section** — three-tier Flexbox/Grid pricing cards on
+  the Services page
+- **Infinite-scroll marquee** — a looping capability strip under the
+  header on every page (pure CSS keyframe animation, pauses on hover)
+
+## Technologies Used
+- HTML5
+- CSS3 (Flexbox, Grid, custom properties, keyframe animations,
+  `backdrop-filter`, media queries)
+- Vanilla JavaScript (`js/site.js`) for the theme toggle, scroll
+  progress bar, back-to-top visibility, and scroll-reveal animations
+- Google Fonts (Fraunces, Manrope)
 
 ## Project Structure
 
@@ -31,6 +107,8 @@ techtide-website/
 ├── contact.html
 ├── css/
 │   └── style.css
+├── js/
+│   └── site.js
 ├── images/
 │   ├── hero-bg.jpg
 │   ├── office-building.jpg
@@ -53,94 +131,28 @@ techtide-website/
 All images and the video were generated specifically for this project (no
 external/copyrighted media), so there are no licensing concerns.
 
-## CSS Concepts Used
-
-**Carried over from Day 1:** external stylesheet only, Google Fonts,
-CSS variables, universal reset, full typography scale, sticky navigation,
-gradient hero section, table-based card grids, styled forms, responsive
-media query.
-
-**New in Day 2:**
-- **Box Model applied deliberately throughout** — every card, section,
-  button, and form field now has explicit `margin`, `padding`, `border`,
-  and (where relevant) `border-radius`, documented with inline comments
-  in `style.css` next to each property.
-- **Main content container** — `<main>` has a fixed `max-width: 1100px`,
-  is centered with `margin: 0 auto`, and controls inner spacing with
-  `padding` (this was introduced in Day 1 and is now explicitly called
-  out as the "container" per the Day 2 requirement).
-- **Bordered sections** — every `<section>` gets a left border + left
-  padding, visually separating page regions.
-- **Three card systems**, each with border + border-radius + padding +
-  margin + box-shadow:
-  1. `main > section > article` — single-column cards (Who We Are,
-     Mission, Vision, and each Service on the Services page).
-  2. `table td` — grid cards (Featured Services, Team Members, Featured
-     Content, Contact Information).
-  3. `.read-more-link` — a small pill-button call-to-action inside the
-     Featured Content cards.
-- **Buttons** — background color, padding, border-radius, `cursor:
-  pointer`, and a hover state (color change + lift) on every `<button>`
-  and `input[type="submit"]`.
-- **Improved navigation** — spacing between menu items (`gap`), a new
-  `.active` state that highlights the current page, and refined hover
-  underline effects.
-- **Image system** — a base `img` rule plus purpose-built variants:
-  `.avatar` (circular team photos), `.icon-img` (small service icons),
-  `.card-img` (rectangular content thumbnails), and `.banner-img` (wide
-  banner image), so every image type is sized and cropped consistently.
-- **Video styling** — a `.video-wrapper` / `.intro-video` rule set that
-  keeps the embedded video responsive, rounded, and shadowed like the
-  other cards.
-- **Clean footer layout** — flexbox arrangement of copyright/contact
-  info against the social links, with a seafoam top border accent.
-- **CSS-only "Back to Top" button** *(Bonus)* — a `position: fixed`
-  circular button linking to `#top`, no JavaScript required.
-
-## Features Added in Day 2
-
-- Applied the box model (margin/padding/border) consistently across
-  sections, cards, buttons, and form fields.
-- Turned every major content block into a card with border, radius,
-  padding, margin, and shadow — including the individual Services page
-  entries, which were previously plain text blocks.
-- Added a **Featured Content** card section to the Home page (case
-  study, blog post, whitepaper), completing the three required card
-  categories (Services, Team Members, Featured Content).
-- Added an original hero background image, five custom service icons,
-  three "workspace & culture" illustrations on the About page, three
-  Featured Content thumbnails, and an office-building illustration on
-  the Contact page — all generated specifically for this project.
-- Added a short **company intro video** (`videos/company-intro.mp4`,
-  ~8 seconds, self-produced) embedded on the Home page with a poster
-  image and native HTML5 video controls.
-- Added **active-page highlighting** in the navigation bar.
-- Added a **CSS-only "Back to Top" button** *(Bonus challenge)*.
-- Refined the footer into a clean two-column flex layout.
-- Extra responsive rules for the new sections, footer, and back-to-top
-  button at narrow widths.
-
 ## How to Run the Project
 
-1. Download or clone this repository, keeping the folder structure intact
-   (`css/`, `images/`, and `videos/` must stay alongside the HTML files).
-2. Open `index.html` in any modern web browser.
+1. Download or unzip this project, keeping the folder structure intact
+   (`css/`, `js/`, `images/`, and `videos/` must stay alongside the HTML
+   files).
+2. Open `index.html` in any modern web browser (or serve the folder with
+   a local server, e.g. `python -m http.server`, for the smoothest
+   experience with the video and map embed).
 3. Use the navigation bar to move between Home, About, Services, and
    Contact — the current page is highlighted automatically.
-4. Click the circular arrow button in the bottom-right corner at any time
-   to jump back to the top of the page.
-5. An internet connection is needed the first time each page loads so the
+4. Click the sun/moon icon in the header to toggle dark/light mode; your
+   preference is remembered on your next visit.
+5. Scroll down on any page to see the fade-in animations, the scroll
+   progress bar fill in at the top of the screen, and the back-to-top
+   button appear in the bottom-right corner.
+6. An internet connection is needed the first time each page loads so
    Google Fonts and the embedded Contact-page map can load; the images
    and video are all local files and work fully offline.
 
-## Notes on the "Cards Without a CSS Framework" Approach
-
-No Bootstrap or CSS framework is used anywhere. All card grids are plain
-HTML `<table>` elements (from the original HTML-only assignment) or plain
-`<article>` elements, styled entirely through custom CSS in
-`css/style.css` — borders, spacing, rounded corners, shadows, and hover
-lift are hand-written rules, not framework classes.
+## GitHub Repository
+`https://github.com/<your-username>/techtide-website` — replace with your
+actual repository link before submission.
 
 ## Author
-
 TechTide Summer Internship 2026 — Intern Submission

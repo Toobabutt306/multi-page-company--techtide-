@@ -8,6 +8,8 @@
 </head>
 <body id="top">
 
+    <div id="scroll-progress"></div>
+
     <header class="site-header">
         <div class="header-inner">
             <a href="index.html" class="brand">TechTide <span>Solutions</span></a>
@@ -23,19 +25,35 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <div class="nav-actions">
+                <button type="button" id="theme-toggle" aria-label="Switch to light mode">&#127769;</button>
+            </div>
         </div>
     </header>
+
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span class="hl">WEB DEVELOPMENT</span><span>CLOUD CONSULTING</span><span class="hl">DIGITAL MARKETING</span><span>IT SUPPORT</span><span class="hl">MOBILE APPS</span>
+            <span class="hl">WEB DEVELOPMENT</span><span>CLOUD CONSULTING</span><span class="hl">DIGITAL MARKETING</span><span>IT SUPPORT</span><span class="hl">MOBILE APPS</span>
+        </div>
+    </div>
 
     <main>
 
         <section class="page-hero">
             <div class="wrap">
-                <p class="eyebrow">About TechTide</p>
-                <h1>The team behind the tide.</h1>
-                <p class="lead">
-                    We're a multidisciplinary group of builders, strategists, and designers who
-                    believe good technology should feel effortless to the people using it.
-                </p>
+                <div class="hero-grid">
+                    <div class="reveal reveal-left">
+                        <p class="eyebrow">About TechTide</p>
+                        <h1>The team behind the tide.</h1>
+                        <p class="lead">
+                            We're a multidisciplinary group of builders, strategists, and designers who
+                            believe good technology should feel effortless to the people using it.
+                        </p>
+                    </div>
+                    <img src="images/hero/hero-team.svg" alt="Illustration of a connected team representing TechTide's collaborative culture" class="page-hero-art reveal reveal-right">
+                </div>
             </div>
         </section>
 
@@ -46,7 +64,7 @@
         <section class="band band-light band-tight" style="padding-top:0;">
             <div class="wrap">
                 <div class="split">
-                    <div>
+                    <div class="reveal reveal-left">
                         <p class="eyebrow">Company overview</p>
                         <h2>Founded in 2018 on a simple idea.</h2>
                         <p>
@@ -61,7 +79,7 @@
                             a difference for the people who use them.
                         </p>
                     </div>
-                    <img src="images/gallery/about-innovation.jpg" alt="Illustration representing innovation" class="banner-img" style="height:100%; margin-bottom:0;">
+                    <img src="images/gallery/about-innovation.svg" alt="Illustration representing innovation" class="banner-img reveal reveal-right" style="height:100%; margin-bottom:0;">
                 </div>
             </div>
         </section>
@@ -72,7 +90,7 @@
 
         <section class="band band-dark band-tight" style="padding-top:0;">
             <div class="wrap">
-                <div class="pillars">
+                <div class="pillars reveal reveal-group">
                     <div class="pillar">
                         <p class="eyebrow">Our mission</p>
                         <p>
@@ -97,14 +115,14 @@
 
         <section class="band band-light">
             <div class="wrap">
-                <div class="band-header">
+                <div class="band-header reveal">
                     <p class="eyebrow">Meet the team</p>
                     <h2>The people who make it happen.</h2>
                 </div>
 
-                <div class="grid grid-4">
+                <div class="grid grid-4 reveal reveal-group">
                     <article class="card team-card">
-                        <img src="images/team-sara.png" alt="Photo of Sara Ahmed" class="avatar">
+                        <img src="images/team-sara.svg" alt="Photo of Sara Ahmed" class="avatar">
                         <h3>Sara Ahmed</h3>
                         <p class="role">Chief Executive Officer</p>
                         <p>
@@ -113,7 +131,7 @@
                         </p>
                     </article>
                     <article class="card team-card">
-                        <img src="images/team-bilal.png" alt="Photo of Bilal Khan" class="avatar">
+                        <img src="images/team-bilal.svg" alt="Photo of Bilal Khan" class="avatar">
                         <h3>Bilal Khan</h3>
                         <p class="role">Chief Technology Officer</p>
                         <p>
@@ -122,7 +140,7 @@
                         </p>
                     </article>
                     <article class="card team-card">
-                        <img src="images/team-ayesha.png" alt="Photo of Ayesha Malik" class="avatar">
+                        <img src="images/team-ayesha.svg" alt="Photo of Ayesha Malik" class="avatar">
                         <h3>Ayesha Malik</h3>
                         <p class="role">Head of Design</p>
                         <p>
@@ -131,7 +149,7 @@
                         </p>
                     </article>
                     <article class="card team-card">
-                        <img src="images/team-hamza.png" alt="Photo of Hamza Raza" class="avatar">
+                        <img src="images/team-hamza.svg" alt="Photo of Hamza Raza" class="avatar">
                         <h3>Hamza Raza</h3>
                         <p class="role">Lead Developer</p>
                         <p>
@@ -149,24 +167,24 @@
 
         <section class="band band-dark band-tight" style="padding-top:0;">
             <div class="wrap">
-                <div class="band-header">
+                <div class="band-header reveal">
                     <p class="eyebrow">Workspace &amp; culture</p>
                     <h2>A glimpse into how we work together every day.</h2>
                 </div>
 
-                <div class="grid grid-3">
+                <div class="grid grid-3 reveal reveal-group">
                     <article class="card culture-card">
-                        <img src="images/gallery/about-collaboration.jpg" alt="Illustration representing team collaboration" class="card-img">
+                        <img src="images/gallery/about-collaboration.svg" alt="Illustration representing team collaboration" class="card-img">
                         <h3>Collaboration</h3>
                         <p>Cross-functional teams working together from discovery through delivery.</p>
                     </article>
                     <article class="card culture-card">
-                        <img src="images/gallery/about-innovation.jpg" alt="Illustration representing innovation" class="card-img">
+                        <img src="images/gallery/about-innovation.svg" alt="Illustration representing innovation" class="card-img">
                         <h3>Innovation</h3>
                         <p>We invest time every sprint in exploring new tools and better ways to build.</p>
                     </article>
                     <article class="card culture-card">
-                        <img src="images/gallery/about-growth.jpg" alt="Illustration representing growth" class="card-img">
+                        <img src="images/gallery/about-growth.svg" alt="Illustration representing growth" class="card-img">
                         <h3>Growth</h3>
                         <p>We measure success by our clients' growth as much as our own.</p>
                     </article>
@@ -196,6 +214,8 @@
     </footer>
 
     <a href="#top" class="back-to-top" aria-label="Back to top of page">&uarr;</a>
+
+    <script src="js/site.js"></script>
 
 </body>
 </html>
